@@ -14,4 +14,9 @@ Aplikasi ini memiliki fitur sebagai berikut:
 - **NetBeans IDE**: IDE untuk pengembangan aplikasi.
 - **Swing (JFrame, JTextField, JButton, JLabel)**: Library GUI Java.
 
-## 📦 Struktur Proyek
+## 🚀 Fitur
+1. **Penjumlahan Angka**: Menampilkan hasil penjumlahan dua angka yang dimasukkan pengguna.
+2. **Validasi Input**: Menggunakan `try-catch` untuk memeriksa apakah input berupa angka.
+3. **Pesan Error**: Menggunakan `JOptionPane` untuk menampilkan pesan jika input bukan angka.
+4. **Reset Input**: Tombol **Hapus** untuk mengosongkan input field.
+5. **Keluar dari Aplikasi**: Tombol **Keluar** untuk menutup aplikasi.
