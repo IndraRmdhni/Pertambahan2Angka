@@ -41,9 +41,20 @@ public class Pertambahan2Angka extends javax.swing.JFrame {
 
         jLabel2.setText("Angka 2");
 
+        AngkaPertama.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                AngkaPertamaKeyTyped(evt);
+            }
+        });
+
         AngkaKedua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AngkaKeduaActionPerformed(evt);
+            }
+        });
+        AngkaKedua.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                AngkaKeduaKeyTyped(evt);
             }
         });
 
@@ -138,6 +149,20 @@ System.exit(0);
     private void AngkaKeduaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AngkaKeduaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AngkaKeduaActionPerformed
+
+    private void AngkaPertamaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_AngkaPertamaKeyTyped
+char c = evt.getKeyChar();
+if (!Character.isDigit(c)) {
+    evt.consume();
+}
+    }//GEN-LAST:event_AngkaPertamaKeyTyped
+
+    private void AngkaKeduaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_AngkaKeduaKeyTyped
+char c = evt.getKeyChar();
+if (!Character.isDigit(c)) {
+    evt.consume();
+}
+    }//GEN-LAST:event_AngkaKeduaKeyTyped
 
     /**
      * @param args the command line arguments
